@@ -18,6 +18,10 @@ def index():
 def form():
     return render_template('form.html')
 
+@app.route('/List')
+def list():
+    return render_template('list.html')
+
 if __name__ == '__main__':
     app.run(debug=True, port=3000)
 
